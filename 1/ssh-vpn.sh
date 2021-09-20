@@ -89,7 +89,7 @@ chmod +x /usr/local/bin/ws-stunnel
 # Installing Service
 cat > /etc/systemd/system/ws-stunnel.service << END
 [Unit]
-Description=Python Edu Ssl Proxy By Brody
+Description=Python Edu Ssl Proxy By bowo
 Documentation=https://premium-server.xyz
 After=network.target nss-lookup.target
 
@@ -168,7 +168,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
 echo "clear" >> .profile
 echo "neofetch" >> .profile
-echo "echo Script Premium By Brody " >> .profile
+echo "echo ===== ScriptVPS Created By Bowo ===== " >> .profile
 echo "echo Silahkan Ketik Menu Untuk Melihat daftar Perintah" >> .profile
 
 # install webserver
@@ -178,7 +178,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/aryprabow/bowo/main/1/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<h1><center>AutoScriptVPS By Brody</center></h1>" > /home/vps/public_html/index.html
+echo "<h1><center>AutoScriptVPS By Bowo</center></h1>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/aryprabow/bowo/main/1/vps.conf"
 /etc/init.d/nginx restart
 
