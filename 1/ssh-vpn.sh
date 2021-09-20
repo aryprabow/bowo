@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script By Brody
+# Script By Bowo
 # ==================================================
 
 # initializing var
@@ -14,10 +14,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=premium-server.xyz
-organizationalunit=premium-server.xyz
-commonname=premium-server.xyz
-email=admin@premium-server.xyz
+organization=bowo
+organizationalunit=bowo
+commonname=bowo
+email=admin@bowo
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/aryprabow/bowo/main/1/password"
@@ -33,7 +33,7 @@ chmod +x /usr/local/bin/edu-ovpn
 # Installing Service
 cat > /etc/systemd/system/edu-ovpn.service << END
 [Unit]
-Description=Python Edu Ovpn By Brody
+Description=Python Edu Ovpn By Bowo
 Documentation=https://premium-server.xyz
 After=network.target nss-lookup.target
 
@@ -61,7 +61,7 @@ chmod +x /usr/local/bin/ws-dropbear
 # Installing Service
 cat > /etc/systemd/system/ws-dropbear.service << END
 [Unit]
-Description=Python Edu Ovpn By Brody
+Description=Python Edu Ovpn By Bowo
 Documentation=https://premium-server.xyz
 After=network.target nss-lookup.target
 
